@@ -69,6 +69,6 @@ anim = animation.FuncAnimation(fig=fig, func=update, frames=n+1, interval=h*1e3)
 
 # SAVE #
 
-anim.save('double_pendulum.mp4')
+anim.save(f'double_pendulum_{tuple(inits[1])}.mp4')
 plt.close(fig)
 print('Animation is saved.')
